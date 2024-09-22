@@ -22,15 +22,11 @@
         >
         <nav class="header-nav">
           <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./index.html">Студія</a>
-            </li>
             <li class="header-nav__item header-nav__item--active">
-              <a
-                class="header-nav__link header-nav__link--active header-nav__link--current"
-                href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="header-nav__link header-nav__link--active" href="./index.html">Студія</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link--current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="header-nav__item">
               <a class="header-nav__link" href="#">Контакти</a>
@@ -39,26 +35,27 @@
         </nav>
         <ul class="header-contact">
           <li class="header-contact__item">
-            <svg class="header-contact__img" width="20px" height="16px">
+            <svg class="header-contact__img header-contact__img--start">
               <use href="./img/sprite.svg#envelope"></use>
             </svg>
-            <a
-              class="header-contact__mail header-contact__link"
-              href="mailto:info@devstudio.com"
+            <a class="header-contact__mail header-contact__link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="header-contact__item">
-            <svg class="header-contact__img" width="17px" height="16px">
+            <svg class="header-contact__img header-contact__img--end">
               <use href="./img/sprite.svg#smartphone"></use>
             </svg>
-            <a
-              class="header-contact__number header-contact__link"
-              href="tel:+380961111111"
+            <a class="header-contact__number header-contact__link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
+        <div class="header-menu">
+          <svg class="header-menu_svg">
+            <use href="./img/sprite.svg#nav-menu"></use>
+          </svg>
+        </div>
       </div>
     </header>
     <main class="main main--portfolio">
@@ -369,7 +366,9 @@
           </ul>
         </div>
         <div class="subscribe">
-          <h3 class="subscribe__text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
+          <h3 class="subscribe__title">
+            ПІДПИШІТЬСЯ НА РОЗСИЛКУ
+          </h3>
           <form class="subscribe__form">
             <label class="subscribe__label">
               <input

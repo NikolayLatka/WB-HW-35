@@ -18,10 +18,3 @@
     animation-duration: $duration;
     animation-iteration-count: $iteration-count;
 }
-
-@mixin customers-svg-sizes($width, $height, $left, $top) {
-    width: $width;
-    height: $height;
-    left: $left;
-    top: $top;
-}

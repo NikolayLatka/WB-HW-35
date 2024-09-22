@@ -1,10 +1,26 @@
 .sorting-list {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   margin-top: 94px;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
   gap: 8px;
+  
+  @include sizes(326px, 91px);
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    flex-direction: row;
+    width: 575px;
+    height: 54px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 34px;
+  }
 
 &__btn {
   @include font(16px, 500, calc(26 / 16));

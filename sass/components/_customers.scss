@@ -65,76 +65,76 @@
 }
 
 &__svg {
-  // position: relative;
+  @extend %flex-center;
 
   fill: $third-text-color;
 }
 
 &__svg--first {
-  @include customers-svg-sizes(50.27px, 50.23px, 38%, 22%);
+  @include sizes(50.27px, 50.23px);
 
   @media screen and (min-width: $tablet) {
-    @include customers-svg-sizes(43.27px, 43.23px, 40%, 26%);
+    @include sizes(43.27px, 43.23px);
   }
 
   @media screen and (min-width: $desktop) {
-  @include customers-svg-sizes(46px, 52.7px, 35%, 20%);
+  @include sizes(46px, 52.7px);
   }
 }
 
 &__svg--second{
-  @include customers-svg-sizes(53px, 65px, 38%, 12%);
+  @include sizes(53px, 65px);
 
   @media screen and (min-width: $tablet) {
-  @include customers-svg-sizes(50px, 62px, 38%, 13%);
+  @include sizes(50px, 62px);
   }
 
   @media screen and (min-width: $desktop) {
-  @include customers-svg-sizes(48px, 60px, 35%, 15%);
+  @include sizes(48px, 60px);
   }
 }
 
 &__svg--third {
-  @include customers-svg-sizes(50.46px, 48.18px, 38%, 22%);
+  @include sizes(50.46px, 48.18px);
 
   @media screen and (min-width: $tablet) {
-  @include customers-svg-sizes(45.46px, 43.18px, 40%, 24%);
+  @include sizes(45.46px, 43.18px);
   }
 
   @media screen and (min-width: $desktop) {
-  @include customers-svg-sizes(43.46px, 41.18px, 37%, 25%);
+  @include sizes(43.46px, 41.18px);
   }
 }
 
 &__svg--fourth {
-  @include customers-svg-sizes(160.44px, 116.62px, 16%, -8%);
+  @include sizes(160.44px, 116.62px);
 
   @media screen and (min-width: $desktop) {
-  @include customers-svg-sizes(170.44px, 126.62px, 2%, -17%);
+  @include sizes(170.44px, 126.62px);
   }
 }
 
 &__svg--fifth {
-  @include customers-svg-sizes(83.54px, 66.43px, 30%, 12%);
+  @include sizes(83.54px, 66.43px);
 
   @media screen and (min-width: $tablet) {
-  @include customers-svg-sizes(75.54px, 58.43px, 32%, 16%);
+  @include sizes(75.54px, 58.43px);
   }
 
   @media screen and (min-width: $desktop) {
-  @include customers-svg-sizes(77.54px, 60.43px, 25%, 15%);
+  @include sizes(77.54px, 60.43px);
   }
 }
 
 &__svg--sixth {
-  @include customers-svg-sizes(153.79px, 103.93px, 13%, -12%);
+  @include sizes(153.79px, 103.93px);
 
   @media screen and (min-width: $tablet) {
-  @include customers-svg-sizes(133.79px, 83.93px, 17%, 5%);
+  @include sizes(133.79px, 83.93px);
   }
 
   @media screen and (min-width: $desktop) {
-  @include customers-svg-sizes(153.79px, 103.93px, 9%,-5%);
+  @include sizes(153.79px, 103.93px);
   }
 }
 }
